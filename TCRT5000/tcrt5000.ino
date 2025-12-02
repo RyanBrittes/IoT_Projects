@@ -47,13 +47,11 @@ void loop() {
     digitalWrite(LED, LOW);
   }
 
-  if (stateSensor == false){
-    digitalWrite(LED, HIGH);
+  if (stateD0 == false){
     stateWindow = "Fechado";
     updateDisplay();
   }
   else {
-    digitalWrite(LED, LOW);
     stateWindow = "Aberto";
     updateDisplay();
   }
